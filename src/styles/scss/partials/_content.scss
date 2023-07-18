@@ -5,14 +5,38 @@
         cursor: pointer;
         font-size: 5rem;
         position: absolute;
-        right: 0;
+        right: -8.1rem;
         top: 50%;
         transform: translateY(-50%);
 
         &.left {
-            left: 0;
+            left: -8.1rem;
             right: auto;
             transform: translateY(-50%) rotate(180deg);
         }
+    }
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    height: 14rem;
+    justify-content: center;
+    position: relative;
+
+    .icon-logo {
+        font-size: 14rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    h2 {
+        color: $color-primary;
+        font-family: $font-family-merriweather;
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 6.4rem;
+        margin: 0;
     }
 }

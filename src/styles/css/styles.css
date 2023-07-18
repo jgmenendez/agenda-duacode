@@ -51,8 +51,8 @@
 /*** ICOMOON ***/
 @font-face {
     font-family: 'icomoon';
-    src: url("../../assets/fonts/icomoon/icomoon.eot?m1ov22");
-    src: url("../../assets/fonts/icomoon/icomoon.eot?m1ov22#iefix") format("embedded-opentype"), url("../../assets/fonts/icomoon/icomoon.ttf?m1ov22") format("truetype"), url("../../assets/fonts/icomoon/icomoon.woff?m1ov22") format("woff"), url("../../assets/fonts/icomoon/icomoon.svg?m1ov22#icomoon") format("svg");
+    src: url("../../assets/fonts/icomoon/icomoon.eot?3sss64");
+    src: url("../../assets/fonts/icomoon/icomoon.eot?3sss64#iefix") format("embedded-opentype"), url("../../assets/fonts/icomoon/icomoon.ttf?3sss64") format("truetype"), url("../../assets/fonts/icomoon/icomoon.woff?3sss64") format("woff"), url("../../assets/fonts/icomoon/icomoon.svg?3sss64#icomoon") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -89,6 +89,11 @@
 
 .icon-select:before {
     content: "\e903";
+}
+
+.icon-logo:before {
+    content: "\e904";
+    color: #00a0df;
 }
 
 /*** BASE ***/
@@ -212,15 +217,39 @@ img {
     cursor: pointer;
     font-size: 5rem;
     position: absolute;
-    right: 0;
+    right: -8.1rem;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .banner .icon-slider.left {
-    left: 0;
+    left: -8.1rem;
     right: auto;
     transform: translateY(-50%) rotate(180deg);
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    height: 14rem;
+    justify-content: center;
+    position: relative;
+}
+
+.title .icon-logo {
+    font-size: 14rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.title h2 {
+    color: #00A0E0;
+    font-family: "merriweather", Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 6.4rem;
+    margin: 0;
 }
 
 .btn {
