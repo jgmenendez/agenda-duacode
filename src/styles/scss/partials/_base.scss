@@ -40,9 +40,16 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    height: auto;
+    width: 100%;    
+}
+
 .container-fluid {
     margin: auto;
-    max-width: 137.8rem;
+    max-width: 154rem;
+    padding: 0 8.1rem;
 }
 
 .btn-back {

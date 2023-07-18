@@ -1,0 +1,18 @@
+.banner {
+    position: relative;
+
+    .icon-slider {
+        cursor: pointer;
+        font-size: 5rem;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &.left {
+            left: 0;
+            right: auto;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+}
