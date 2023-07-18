@@ -1,0 +1,72 @@
+.btn {
+    border: 1px solid $color-primary;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.4rem;
+    margin-right: 2rem;
+    padding: 0.7rem 1.9rem;
+
+    > span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    &-primary {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-primary-hover;
+            color: $color-primary;
+        }
+    }
+
+    &-secondary {
+        background-color: $color-white;
+        color: $color-primary;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+
+    &-link {
+        background-color: transparent;
+        border: none;
+        color: $color-black;
+        font-weight: 400;
+        margin-right: 3rem;
+        padding: 0;
+        position: relative;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $color-primary;
+            
+            &:after {
+                background-color: $color-primary;
+                bottom: -0.8rem;
+                content: '';
+                height: 0.2rem;
+                left: 0;
+                position: absolute;
+                width: 100%;
+            }
+        }
+    }
+
+    &-icon {
+        padding-left: 1.5rem;
+
+        > .icon-user {
+            font-size: 2rem;
+            margin-right: 0.2rem;
+        }
+    }
+}

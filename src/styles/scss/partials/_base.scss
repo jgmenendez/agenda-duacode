@@ -7,6 +7,7 @@
 
 html,
 body {
+    font-family: $font-family-lato;
     font-size: 10px;
     margin: 0;
     min-height: 100vh;
@@ -19,12 +20,12 @@ body {
 
 h1 {
     display: inline-block;
-    &.lato {
-        font-family: $font-family-lato;
-    }
-    &.merriweather {
-        font-family: $font-family-merriweather;
-    }
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
 }
 
 p {
@@ -39,9 +40,9 @@ ul {
     padding: 0;
 }
 
-.container-max-width {
+.container-fluid {
     margin: auto;
-    max-width: 136.6rem;
+    max-width: 137.8rem;
 }
 
 .btn-back {

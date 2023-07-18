@@ -49,6 +49,40 @@
 }
 
 /*** ICOMOON ***/
+@font-face {
+    font-family: 'icomoon';
+    src: url("../../assets/fonts/icomoon/icomoon.eot?r5zx5i");
+    src: url("../../assets/fonts/icomoon/icomoon.eot?r5zx5i#iefix") format("embedded-opentype"), url("../../assets/fonts/icomoon/icomoon.ttf?r5zx5i") format("truetype"), url("../../assets/fonts/icomoon/icomoon.woff?r5zx5i") format("woff"), url("../../assets/fonts/icomoon/icomoon.svg?r5zx5i#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: never;
+    vertical-align: middle;
+    text-transform: none;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-travel:before {
+    content: "\e900";
+}
+
+.icon-user:before {
+    content: "\e901";
+    color: #fff;
+}
+
 /*** BASE ***/
 *,
 *:after,
@@ -60,26 +94,25 @@
 
 html,
 body {
+    font-family: "lato", Arial, Helvetica, sans-serif;
     font-size: 10px;
     margin: 0;
     min-height: 100vh;
 }
 
 body {
-    background-color: #F8F7F7;
+    background-color: #FFFFFF;
     color: #373D42;
 }
 
 h1 {
     display: inline-block;
+    margin: 0;
 }
 
-h1.lato {
-    font-family: "lato", Arial, Helvetica, sans-serif;
-}
-
-h1.merriweather {
-    font-family: "merriweather", Arial, Helvetica, sans-serif;
+a {
+    text-decoration: none;
+    display: inline-block;
 }
 
 p {
@@ -94,9 +127,9 @@ ul {
     padding: 0;
 }
 
-.container-max-width {
+.container-fluid {
     margin: auto;
-    max-width: 136.6rem;
+    max-width: 137.8rem;
 }
 
 .btn-back {
@@ -119,6 +152,96 @@ ul {
 .btn-link > span {
     display: inline-block;
     vertical-align: middle;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.3rem 0 5.1rem;
+}
+
+.header .logo a {
+    display: block;
+}
+
+.header .actions {
+    align-items: center;
+    display: flex;
+}
+
+.header .actions .links {
+    margin-right: 1rem;
+}
+
+.header .actions .lang {
+    font-size: 1.6rem;
+}
+
+.btn {
+    border: 1px solid #00A0E0;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.4rem;
+    margin-right: 2rem;
+    padding: 0.7rem 1.9rem;
+}
+
+.btn > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background-color: #00A0E0;
+    color: #FFFFFF;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #FFFFFF;
+    color: #00A0E0;
+}
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #00A0E0;
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+    background-color: #00A0E0;
+    color: #FFFFFF;
+}
+
+.btn-link {
+    background-color: transparent;
+    border: none;
+    color: #212429;
+    font-weight: 400;
+    margin-right: 3rem;
+    padding: 0;
+    position: relative;
+}
+
+.btn-link:hover, .btn-link:active, .btn-link:focus {
+    color: #00A0E0;
+}
+
+.btn-link:hover:after, .btn-link:active:after, .btn-link:focus:after {
+    background-color: #00A0E0;
+    bottom: -0.8rem;
+    content: '';
+    height: 0.2rem;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.btn-icon {
+    padding-left: 1.5rem;
+}
+
+.btn-icon > .icon-user {
+    font-size: 2rem;
+    margin-right: 0.2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
