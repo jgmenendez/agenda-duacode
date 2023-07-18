@@ -7,7 +7,6 @@
 
 html,
 body {
-    font-family: $font-family-mulish;
     font-size: 10px;
     margin: 0;
     min-height: 100vh;
@@ -20,6 +19,12 @@ body {
 
 h1 {
     display: inline-block;
+    &.lato {
+        font-family: $font-family-lato;
+    }
+    &.merriweather {
+        font-family: $font-family-merriweather;
+    }
 }
 
 p {
@@ -32,38 +37,6 @@ p {
 ul {
     list-style: none;
     padding: 0;
-}
-
-.title,
-.subtitle {
-    color: $color-text;
-    font-family: $font-family-playfair;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-align: center;
-}
-
-.title {
-    font-size: 3.2rem;
-    line-height: 4.3rem;
-    @include media(lg) {
-        font-size: 4.5rem;
-        line-height: 6rem;
-    }
-}
-
-.subtitle {
-    font-size: 2rem;
-    line-height: 2.7rem;
-    width: 100%;
-    @include media(md) {
-        font-size: 2.2rem;
-        line-height: 2.9rem;
-    }
-    @include media(lg) {
-        font-size: 3.2rem;
-        line-height: 4.3rem;
-    }
 }
 
 .container-max-width {

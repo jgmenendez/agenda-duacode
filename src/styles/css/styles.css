@@ -1,3 +1,54 @@
+/*** LATO ***/
+@font-face {
+    font-family: 'lato';
+    src: url("../../assets/fonts/lato/lato-regular-webfont.eot");
+    src: url("../../assets/fonts/lato/lato-regular-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/lato/lato-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/lato/lato-regular-webfont.woff") format("woff"), url("../../assets/fonts/lato/lato-regular-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../../assets/fonts/lato/lato-italic-webfont.eot");
+    src: url("../../assets/fonts/lato/lato-italic-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/lato/lato-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/lato/lato-italic-webfont.woff") format("woff"), url("../../assets/fonts/lato/lato-italic-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../../assets/fonts/lato/lato-bold-webfont.eot");
+    src: url("../../assets/fonts/lato/lato-bold-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/lato/lato-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/lato/lato-bold-webfont.woff") format("woff"), url("../../assets/fonts/lato/lato-bold-webfont.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*** MERRIWEATHER ***/
+@font-face {
+    font-family: 'merriweather';
+    src: url("../../assets/fonts/merriweather/merriweather-regular-webfont.eot");
+    src: url("../../assets/fonts/merriweather/merriweather-regular-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/merriweather/merriweather-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather/merriweather-regular-webfont.woff") format("woff"), url("../../assets/fonts/merriweather/merriweather-regular-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url("../../assets/fonts/merriweather/merriweather-italic-webfont.eot");
+    src: url("../../assets/fonts/merriweather/merriweather-italic-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/merriweather/merriweather-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather/merriweather-italic-webfont.woff") format("woff"), url("../../assets/fonts/merriweather/merriweather-italic-webfont.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'merriweather';
+    src: url("../../assets/fonts/merriweather/merriweather-bold-webfont.eot");
+    src: url("../../assets/fonts/merriweather/merriweather-bold-webfont.eot") format("embedded-opentype"), url("../../assets/fonts/merriweather/merriweather-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/merriweather/merriweather-bold-webfont.woff") format("woff"), url("../../assets/fonts/merriweather/merriweather-bold-webfont.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*** ICOMOON ***/
 /*** BASE ***/
 *,
 *:after,
@@ -9,7 +60,6 @@
 
 html,
 body {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     margin: 0;
     min-height: 100vh;
@@ -24,6 +74,14 @@ h1 {
     display: inline-block;
 }
 
+h1.lato {
+    font-family: "lato", Arial, Helvetica, sans-serif;
+}
+
+h1.merriweather {
+    font-family: "merriweather", Arial, Helvetica, sans-serif;
+}
+
 p {
     font-size: 1.6rem;
     letter-spacing: 0.01em;
@@ -34,47 +92,6 @@ p {
 ul {
     list-style: none;
     padding: 0;
-}
-
-.title,
-.subtitle {
-    color: #373D42;
-    font-family: "playfair", Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.01em;
-    text-align: center;
-}
-
-.title {
-    font-size: 3.2rem;
-    line-height: 4.3rem;
-}
-
-@media (min-width: 992px) {
-    .title {
-        font-size: 4.5rem;
-        line-height: 6rem;
-    }
-}
-
-.subtitle {
-    font-size: 2rem;
-    line-height: 2.7rem;
-    width: 100%;
-}
-
-@media (min-width: 768px) {
-    .subtitle {
-        font-size: 2.2rem;
-        line-height: 2.9rem;
-    }
-}
-
-@media (min-width: 992px) {
-    .subtitle {
-        font-size: 3.2rem;
-        line-height: 4.3rem;
-    }
 }
 
 .container-max-width {
