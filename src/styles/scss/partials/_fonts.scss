@@ -1,0 +1,126 @@
+/*** MULISH ***/
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishRegular.eot');
+    src: url('../assets/fonts/mulish/MulishRegular.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishRegular.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishRegular.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishItalic.eot');
+    src: url('../assets/fonts/mulish/MulishItalic.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishItalic.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishItalic.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishBold.eot');
+    src: url('../assets/fonts/mulish/MulishBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishBold.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishBold.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishBoldItalic.eot');
+    src: url('../assets/fonts/mulish/MulishBoldItalic.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishBoldItalic.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishBoldItalic.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishExtraBold.eot');
+    src: url('../assets/fonts/mulish/MulishExtraBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishExtraBold.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishExtraBold.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishExtraBold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../assets/fonts/mulish/MulishExtraBoldItalic.eot');
+    src: url('../assets/fonts/mulish/MulishExtraBoldItalic.eot') format('embedded-opentype'),
+         url('../assets/fonts/mulish/MulishExtraBoldItalic.woff2') format('woff2'),
+         url('../assets/fonts/mulish/MulishExtraBoldItalic.woff') format('woff'),
+         url('../assets/fonts/mulish/MulishExtraBoldItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/*** PLAYFAIR DISPLAY ***/
+@font-face {
+    font-family: 'playfair';
+    src: url('../assets/fonts/playfair/PlayfairDisplayRegular.eot');
+    src: url('../assets/fonts/playfair/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+         url('../assets/fonts/playfair/PlayfairDisplayRegular.woff2') format('woff2'),
+         url('../assets/fonts/playfair/PlayfairDisplayRegular.woff') format('woff'),
+         url('../assets/fonts/playfair/PlayfairDisplayRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../assets/fonts/playfair/PlayfairDisplayItalic.eot');
+    src: url('../assets/fonts/playfair/PlayfairDisplayItalic.eot') format('embedded-opentype'),
+         url('../assets/fonts/playfair/PlayfairDisplayItalic.woff2') format('woff2'),
+         url('../assets/fonts/playfair/PlayfairDisplayItalic.woff') format('woff'),
+         url('../assets/fonts/playfair/PlayfairDisplayItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../assets/fonts/playfair/PlayfairDisplayExtraBold.eot');
+    src: url('../assets/fonts/playfair/PlayfairDisplayExtraBold.eot') format('embedded-opentype'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBold.woff2') format('woff2'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBold.woff') format('woff'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'playfair';
+    src: url('../assets/fonts/playfair/PlayfairDisplayExtraBoldItalic.eot');
+    src: url('../assets/fonts/playfair/PlayfairDisplayExtraBoldItalic.eot') format('embedded-opentype'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBoldItalic.woff2') format('woff2'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBoldItalic.woff') format('woff'),
+         url('../assets/fonts/playfair/PlayfairDisplayExtraBoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/*** ICOMOON ***/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../assets/fonts/icomoon/icomoon.eot?gwdn0o');
+    src:  url('../assets/fonts/icomoon/icomoon.eot?gwdn0o#iefix') format('embedded-opentype'),
+          url('../assets/fonts/icomoon/icomoon.ttf?gwdn0o') format('truetype'),
+          url('../assets/fonts/icomoon/icomoon.woff?gwdn0o') format('woff'),
+          url('../assets/fonts/icomoon/icomoon.svg?gwdn0o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}

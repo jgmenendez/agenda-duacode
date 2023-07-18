@@ -1,0 +1,77 @@
+// Calc
+// @include calc($property, $expression);
+@mixin calc($property, $expression) {
+    #{$property}: -moz-calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
+}
+
+// Appearance
+@mixin appearance() {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+// RGBA fallback
+// @include rgba(background-color, black, 0.5, white);
+@mixin rgba($property, $background: black, $opacity: 0.75, $mix: white) {
+    #{$property}: mix($background, $mix, $opacity * 100%);
+    #{$property}: rgba($background, $opacity);
+}
+
+// placeholder inputs 
+@mixin placeholder() {
+	&::-webkit-input-placeholder {@content}
+	&:-moz-placeholder           {@content}
+	&::-moz-placeholder          {@content}
+    &:-ms-input-placeholder      {@content} 
+    &::-ms-input-placeholder     {@content} 
+}
+
+// ==========  Mixins para los Media Queries  ==========
+//* Uso: 
+//.elemento {
+//    @include media(md) {
+//        width: 100%;
+//    }
+//    @include media(lg) {
+//        width: 50%;
+//    }
+//    @include media(xl) {
+//        width: 50%;
+//    }
+//}
+@mixin media($consulta) {
+    $media-md: "(min-width: 768px)"; // Tablets
+    $media-lg: "(min-width: 992px)"; // Escritorios
+    $media-xl: "(min-width: 1200px)"; // Resoluciones grandes
+    $media-xxl: "(min-width: 1400px)"; // Resoluciones extragrandes
+    
+    @if $consulta==md {
+        @media #{$media-md} {
+            @content;
+        }
+    }
+    @else if $consulta==lg {
+        @media #{$media-lg} {
+            @content;
+        }
+    }
+    @else if $consulta==xl {
+        @media #{$media-xl} {
+            @content;
+        }
+    }
+    @else if $consulta==xxl {
+        @media #{$media-xxl} {
+            @content;
+        }
+    }
+}
+
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model; // Safari <= 5
+       -moz-box-sizing: $box-model; // Firefox <= 19
+            box-sizing: $box-model;
+  }

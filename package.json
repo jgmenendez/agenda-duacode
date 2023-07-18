@@ -1,0 +1,23 @@
+{
+  "name": "agenda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --names \"SASS,WATCH,SERVE\" -c \"bgBlue.bold,bgMagenta.bold,bgGreen.bold\" \"npm run sass\" \"npm run sass:watch\" \"npm run serve\"",
+    "serve": "lite-server",
+    "sass": "node-sass ./src/styles/scss/styles.scss --output ./src/styles/css/ --indent-width 4 --output-style expanded --indent-type space --source-map true",
+    "sass:watch": "npm run sass -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
